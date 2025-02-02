@@ -165,7 +165,7 @@
                                     <img src="images/backend.png" class="w-10 h-auto">
                                 </div>
                                 <h5 class="mt-4 text-lg font-semibold text-orange-950 font-poppins tracking-wide">Back-End Development</h5>
-                                <p class="mt-2 text-sm text-orange-950 font-poppins"> Express.js</p>
+                                <p class="mt-2 text-sm text-orange-950 font-poppins"> Express.js, MySQL</p>
                             </div>
                         </div>
                     </div>
@@ -351,20 +351,25 @@
                         </div>
                         <div class="card h-fit max-w-6xl " id="form">
                             <h2 class="mb-4 text-2xl font-bold dark:text-white text-orange-950 font-poppins">Ready to Get Started?</h2>
-                            <form id="contactForm">
+                            <form id="contactForm" method="POST" action="https://formsubmit.co/harvy.ran228@gmail.com">
                                 <div class="mb-6">
                                     <div class="mx-0 mb-1 sm:mb-4">
-                                        <div class="mx-0 mb-1 sm:mb-4">
-                                            <label for="name" class="pb-1 text-xs uppercase tracking-wider"></label><input type="text" id="name" autocomplete="given-name" placeholder="Your name" class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" name="name">
-                                        </div>
-                                        <div class="mx-0 mb-1 sm:mb-4">
-                                            <label for="email" class="pb-1 text-xs uppercase tracking-wider"></label><input type="email" id="email" autocomplete="email" placeholder="Your email address" class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" name="email">
-                                        </div>
+                                        <label for="name" class="pb-1 text-xs uppercase tracking-wider"></label>
+                                        <input type="text" id="name" placeholder="Your name" name="name" class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" required>
                                     </div>
                                     <div class="mx-0 mb-1 sm:mb-4">
-                                        <label for="textarea" class="pb-1 text-xs uppercase tracking-wider"></label><textarea id="textarea" name="textarea" cols="30" rows="5" placeholder="Write your message..." class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"></textarea>
+                                        <label for="email" class="pb-1 text-xs uppercase tracking-wider"></label>
+                                        <input type="email" id="email" placeholder="Your email address" name="email" class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" required>
                                     </div>
                                 </div>
+                                <div class="mx-0 mb-1 sm:mb-4">
+                                    <label for="textarea" class="pb-1 text-xs uppercase tracking-wider"></label>
+                                    <textarea id="textarea" name="textarea" cols="30" rows="5" placeholder="Write your message..." class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" required></textarea>
+                                </div>
+                                
+                                <!-- Hidden fields for Formsubmit.co -->
+                                <input type="hidden" name="_subject" value="New Contact Form Submission">
+                            
                                 <div class="text-center">
                                     <button type="submit" class="w-full bg-orange-500 text-white px-6 py-3 font-xl rounded-md sm:mb-0 font-medium hover:bg-white border hover:text-orange-500 border-orange-500">Send Message</button>
                                 </div>
