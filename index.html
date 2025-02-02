@@ -12,12 +12,12 @@
     <nav id="navbar" class="w-full bg-orange-50 py-4 px-8 sticky top-0 z-50 transition-shadow duration-300">
         <div class="w-3/5 mx-auto flex items-center justify-between">
             <!-- Logo -->
-            <div class="flex items-center space-x-2">
+            <a href="#home" class="flex items-center space-x-2">
                 <img src="images/orangelogo2.png" alt="Logo" class="w-10 h-10">
                 <span class="text-2xl font-Montserrat tracking-widest">
                     <span class="text-orange-500 font-bold">H</span><span class="text-orange-500 font-light">aryen</span>
                 </span>
-            </div>
+            </a>
             <!-- Navigation Links -->
             <ul class="flex space-x-6 text-orange-950 font-medium ">
                 <li><a href="#home" class="hover:text-orange-500">Home</a></li>
@@ -76,44 +76,55 @@
             </div>
         </section>
         <!-- why choose me -->
-        <section id="skills" class="w-3/5 mx-auto flex items-center pt-44">
-            <div class="container mx-auto text-center px-4">
-                <h6 class="text-sm font-semibold text-gray-500 font-poppins tracking-wider">Skills</h6>
-                <h6 class="text-2xl font-bold mb-4 font-poppins ">About me</h6>
-                <p class="mb-5 pb-4 text-gray-700 font-poppins tracking-wider">
-                    I'm a front-end developer focused on creating engaging, user-friendly websites. With expertise in HTML, CSS, JavaScript, 
-                    and Tailwind CSS, I build interactive web experiences. While I'm still improving my back-end skills, 
-                    I’m passionate about designing and coding intuitive interfaces.
-                </p>
-        
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left">
-                    <div>
-                        <h6 class="mb-3 text-lg font-medium text-gray-700">HTML & CSS</h6>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5">
-                            <div class="bg-orange-500 h-2.5 rounded-full" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <h6 class="mb-3 text-lg font-medium text-gray-700">JavaScript</h6>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5">
-                            <div class="bg-orange-500 h-2.5 rounded-full" style="width: 70%;"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <h6 class="mb-3 text-lg font-medium text-gray-700">Figma</h6>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5">
-                            <div class="bg-orange-500 h-2.5 rounded-full" style="width: 75%;"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <h6 class="mb-3 text-lg font-medium text-gray-700">Canva</h6>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5">
-                            <div class="bg-orange-500 h-2.5 rounded-full" style="width: 50%;"></div>
-                        </div>
-                    </div>
+        <section id="skills" class="w-3/5 mx-auto pt-44">
+            <div class="container mx-auto px-4">
+              <div class="flex flex-col md:flex-row items-center">
+                <!-- Left Column: Image -->
+                <div class="w-full md:w-1/2 flex justify-left items-left mb-8 md:mb-0">
+                  <img src="images/personvector.png" alt="Person Vector" class="w-full max-w-sm">
                 </div>
+                <!-- Right Column: Information & Skills -->
+                <div class="w-full md:w-1/2 text-left">
+                  <h6 class="text-sm font-semibold text-gray-500 font-poppins tracking-wider">Skills</h6>
+                  <h6 class="text-2xl font-bold mb-4 font-poppins">About Me</h6>
+                  <p class="mb-2 pb-2 text-gray-700 font-poppins tracking-wider">
+                    I'm a front-end developer focused on creating engaging, user-friendly websites. With expertise in HTML, CSS, JavaScript, and Tailwind CSS, I build interactive web experiences. While I'm still improving my back-end skills, I’m passionate about designing and coding intuitive interfaces.
+                  </p>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <!-- Skill: HTML & CSS -->
+                    <div>
+                      <h6 class="mb-3 text-lg font-medium text-gray-700">HTML & CSS</h6>
+                      <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="bg-orange-500 h-2.5 rounded-full" style="width: 90%;"></div>
+                      </div>
+                    </div>
+                    <!-- Skill: JavaScript -->
+                    <div>
+                      <h6 class="mb-3 text-lg font-medium text-gray-700">JavaScript</h6>
+                      <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="bg-orange-500 h-2.5 rounded-full" style="width: 70%;"></div>
+                      </div>
+                    </div>
+                    <!-- Skill: Figma -->
+                    <div>
+                      <h6 class="mb-3 text-lg font-medium text-gray-700">Figma</h6>
+                      <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="bg-orange-500 h-2.5 rounded-full" style="width: 75%;"></div>
+                      </div>
+                    </div>
+                    <!-- Skill: Canva -->
+                    <div>
+                      <h6 class="mb-3 text-lg font-medium text-gray-700">Canva</h6>
+                      <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="bg-orange-500 h-2.5 rounded-full" style="width: 50%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
+          </section>
+
         <section id="service" class="w-3/5 mx-auto flex items-center pt-56">
             <div class="container mx-auto text-center px-4">
                 <h6 class="text-sm font-semibold text-gray-500 font-poppins tracking-wider">Service</h6>
@@ -361,6 +372,14 @@
                 </div>
             </div>
         </section>
+        <footer class="bg-gray-600 text-white py-4">
+            <div class="container mx-auto text-center">
+                <p class="text-sm tracking-wider">
+                   
+                    © 2025 <span class="text-orange-500 font-bold">Haryen</span> All rights reserved Inc.
+                </p>
+            </div>
+        </footer>
        
        
    
